@@ -1,0 +1,10 @@
+# Build products
+TranslateOne
+TranslateOne.app/
+build/
+DerivedData/
+
+# Temporary files
+*.iconset/
+AppIcon_transparent.png
+.DS_Store

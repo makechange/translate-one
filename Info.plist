@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.jack.TranslateOne</string>
+    <key>CFBundleName</key>
+    <string>TranslateOne</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleExecutable</key>
+    <string>TranslateOne</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>15.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSServices</key>
+    <array>
+        <dict>
+            <key>NSMessage</key>
+            <string>translateService</string>
+            <key>NSPortName</key>
+            <string>TranslateOne</string>
+            <key>NSSendTypes</key>
+            <array>
+                <string>public.text</string>
+                <string>NSStringPboardType</string>
+            </array>
+            <key>NSMenuItem</key>
+            <dict>
+                <key>default</key>
+                <string>Translate with TranslateOne</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
