@@ -312,6 +312,10 @@ struct TranslationHUDView: View {
             do {
                 isTranslating = true
                 translationError = nil
+                
+                // Ensure the translation models are downloaded/prepared
+                try await session.prepareTranslation()
+                
                 let response = try await session.translate(sourceText)
                 translatedText = response.targetText
                 detectedSourceLanguage = response.sourceLanguage.maximalIdentifier
